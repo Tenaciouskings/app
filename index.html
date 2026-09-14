@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MZ Coffee Shop - Premium Coffee & Pastries</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation Header -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <h1>☕ MZ Coffee</h1>
+            </div>
+            <nav class="nav">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#menu">Menu</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h2>Welcome to MZ Coffee Shop</h2>
+            <p>Brewing the Perfect Cup Since 2015</p>
+            <button class="cta-btn" onclick="scrollToMenu()">Explore Our Menu</button>
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section id="menu" class="menu">
+        <div class="container">
+            <h2>Our Menu</h2>
+            <div class="menu-grid">
+                <div class="menu-item">
+                    <h3>Espresso</h3>
+                    <p>Rich, concentrated coffee shot</p>
+                    <span class="price">$2.50</span>
+                </div>
+                <div class="menu-item">
+                    <h3>Cappuccino</h3>
+                    <p>Espresso with steamed milk and foam</p>
+                    <span class="price">$4.50</span>
+                </div>
+                <div class="menu-item">
+                    <h3>Latte</h3>
+                    <p>Smooth and creamy espresso drink</p>
+                    <span class="price">$4.75</span>
+                </div>
+                <div class="menu-item">
+                    <h3>Americano</h3>
+                    <p>Espresso shots with hot water</p>
+                    <span class="price">$3.50</span>
+                </div>
+                <div class="menu-item">
+                    <h3>Mocha</h3>
+                    <p>Espresso, milk, and chocolate goodness</p>
+                    <span class="price">$5.00</span>
+                </div>
+                <div class="menu-item">
+                    <h3>Iced Coffee</h3>
+                    <p>Refreshing cold brew coffee</p>
+                    <span class="price">$3.75</span>
+                </div>
+                <div class="menu-item">
+                    <h3>Macchiato</h3>
+                    <p>Espresso marked with a little foam</p>
+                    <span class="price">$3.75</span>
+                </div>
+                <div class="menu-item">
+                    <h3>Affogato</h3>
+                    <p>Espresso poured over vanilla ice cream</p>
+                    <span class="price">$4.50</span>
+                </div>
+                <div class="menu-item">
+                    <h3>Croissant</h3>
+                    <p>Fresh baked butter croissant</p>
+                    <span class="price">$3.00</span>
+                </div>
+                <div class="menu-item">
+                    <h3>Blueberry Muffin</h3>
+                    <p>Homemade muffin with fresh blueberries</p>
+                    <span class="price">$2.50</span>
+                </div>
+                <div class="menu-item">
+                    <h3>Chocolate Cake</h3>
+                    <p>Decadent chocolate layer cake</p>
+                    <span class="price">$4.00</span>
+                </div>
+                <div class="menu-item">
+                    <h3>Sandwich</h3>
+                    <p>Freshly prepared daily sandwiches</p>
+                    <span class="price">$6.50</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about-content">
+                <h2>About Us</h2>
+                <p>
+                    MZ Coffee Shop has been a beloved community gathering place since 2015. 
+                    We pride ourselves on sourcing the finest coffee beans from around the world 
+                    and roasting them to perfection in-house.
+                </p>
+                <p>
+                    Our baristas are passionate coffee enthusiasts dedicated to creating 
+                    the perfect cup for every customer. We also offer a selection of fresh pastries 
+                    and light meals prepared daily by our talented kitchen team.
+                </p>
+                <div class="features">
+                    <div class="feature">
+                        <h4>🌱 Premium Quality</h4>
+                        <p>Single-origin, ethically sourced beans</p>
+                    </div>
+                    <div class="feature">
+                        <h4>👨‍🍳 Expert Baristas</h4>
+                        <p>Trained professionals crafting your drink</p>
+                    </div>
+                    <div class="feature">
+                        <h4>🏡 Cozy Atmosphere</h4>
+                        <p>Perfect place to work or relax</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Get in Touch</h2>
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <h3>📍 Location</h3>
+                    <p>123 Main Street<br>Downtown District<br>Your City, State 12345</p>
+                </div>
+                <div class="contact-info">
+                    <h3>🕐 Hours</h3>
+                    <p>Monday - Friday: 6:00 AM - 8:00 PM<br>Saturday: 7:00 AM - 9:00 PM<br>Sunday: 8:00 AM - 6:00 PM</p>
+                </div>
+                <div class="contact-info">
+                    <h3>📞 Contact</h3>
+                    <p>Phone: (555) 123-4567<br>Email: hello@mzcoffee.com</p>
+                </div>
+            </div>
+            <form class="contact-form" onsubmit="handleSubmit(event)">
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <textarea placeholder="Your Message" rows="5" required></textarea>
+                <button type="submit" class="submit-btn">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 MZ Coffee Shop. All rights reserved.</p>
+            <div class="social-links">
+                <a href="#">Facebook</a>
+                <a href="#">Instagram</a>
+                <a href="#">Twitter</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
